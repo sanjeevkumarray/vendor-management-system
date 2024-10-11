@@ -1,0 +1,72 @@
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+
+}
+
+.custom-data-grid {
+  width: 95%;
+
+  height: auto;
+  background-color: rgba(18, 21, 26, 0.84);
+}
+
+.custom-data-grid .MuiDataGrid-cell,
+.MuiDataGrid-sortIcon,
+.MuiDataGrid-menuIconButton {
+  color: white !important;
+  font-Weight: 700,
+}
+
+.custom-data-grid .MuiDataGrid-checkboxInput {
+  color: white !important;
+  font-weight: 700,
+}
+
+.custom-data-grid .MuiDataGrid-pagination {
+  color: white !important;
+}
+
+.custom-data-grid .MuiTablePagination-root {
+  color: white !important;
+}
+
+.custom-data-grid .MuiTablePagination-input,
+.custom-data-grid .MuiTablePagination-select {
+  color: white !important;
+}
+
+.custom-data-grid .MuiTablePagination-actions button {
+  color: white !important;
+}
+
+.custom-data-grid .MuiTablePagination-actions button:hover {
+  background-color: rgba(96, 75, 40, 0.674);
+  /* Change the background color on hover */
+}
+
+
+
+.custom-data-grid .MuiDataGrid-cell:hover {
+  background-color: rgba(34, 211, 224, 0.733);
+  /* Change the background color on hover */
+}
+
+.custom-data-grid .MuiDataGrid-columnHeader,
+.custom-data-grid .MuiDataGrid-colCell,
+.custom-data-grid .MuiDataGrid-colCellTitle {
+  color: white !important;
+  font-weight: 700;
+}
+
+.custom-data-grid .MuiDataGrid-columnHeader:hover,
+.custom-data-grid .MuiDataGrid-colCell:hover,
+.custom-data-grid .MuiDataGrid-colCellTitle:hover {
+  color: rgb(170, 230, 192) !important;
+  font-weight: 700;
+}
+
+.custom-data-grid .Mui-checked .MuiDataGrid-checkboxInput {
+  color: white !important;
+}

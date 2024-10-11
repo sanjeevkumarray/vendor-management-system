@@ -1,0 +1,144 @@
+.bgcolor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:auto; /* Adjust the height as needed */
+
+  background: linear-gradient(45deg, hsl(207, 62%, 34%), #0c2d48);
+  color: aliceblue;
+  box-shadow: 2px 2px 5px rgba(140, 61, 61, 0.3);
+  transition: background 0.6s ease;
+}
+
+
+
+.bgcolor:hover {
+  animation: changeGradient 12s infinite; /* 3 seconds for each color change, infinite loop */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+@keyframes changeGradient {
+  0% {
+    background: linear-gradient(45deg, #215d8e, #0c2d48);
+  }
+  25% {
+    background: linear-gradient(45deg, #215d8e, #0f1b24);
+  }
+  50% {
+    background: linear-gradient(45deg, #215d8e, #1b0f24);
+  }
+  75% {
+    background: linear-gradient(45deg, #215d8e, #240f1b);
+  }
+  100% {
+    background: linear-gradient(45deg, #215d8e, #0c2d48);
+  }
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #200000;
+    /* Add other styles for the sidebar */
+  }
+  
+  .content {
+    margin-left: 250px; /* Adjust this value based on the sidebar width */
+    padding: 15px; /* Optional padding to separate content from sidebar */
+    width: calc(100% - 250px); /* Adjust to make room for the sidebar */
+    float: right; /* Use float to move content to the right */
+  }
+  .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background: linear-gradient(45deg, #0C2D48, #1F416B); /* Adjust gradient colors */
+  /* Add other styles for the sidebar */
+  transition: background 0.3s; /* Add transition for smooth color change on hover */
+}
+
+.sidebar:hover {
+  background: linear-gradient(45deg, #330841, #0C2D48); /* Adjust gradient colors on hover */
+}
+
+.content {
+  margin-left: 250px; /* Adjust this value based on the sidebar width */
+  padding: 15px; /* Optional padding to separate content from sidebar */
+  width: calc(100% - 250px); /* Adjust to make room for the sidebar */
+  float: right; /* Use float to move content to the right */
+}
+
+
+.sidebarcategory:hover,
+.sidebarmanagevendor:hover {
+  transform: scale(1.2); /* Increase the size on hover */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Apply shaking effect to text on hover */
+.sidebarcategory:hover,
+.sidebarmanagevendor:hover {
+  animation: shake 0.5s ease; /* Use the shake animation for 0.5 seconds */
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+}
+.heading {
+  position: static;
+  font-weight: bold; /* Make the text bold */
+  text-transform: capitalize; /* Capitalize the text */
+  background-clip: text; /* Clip the background to the text */
+  color: transparent; /* Make the text transparent */
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #ff8a00, #e52e71); /* Add a gradient background */
+  transition: transform 0.3s ease, color 0.3s ease; /* Add a smooth transition effect for transform and color */
+}
+
+.heading:hover {
+  animation: shake 3s ease; /* Use the shake animation for 3 seconds on hover */
+  color: #ffffff; /* Set text color to white on hover */
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+}

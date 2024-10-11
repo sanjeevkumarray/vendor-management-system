@@ -1,0 +1,30 @@
+
+.accountbox, .adminbox, .vendorbox {
+    padding: 10px;
+    font-family: cursive;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, hsla(0, 48%, 26%, 0.427), #7a7a8c); /* Adjust gradient colors */
+    border: 1px solid hsla(0, 38%, 36%, 0.24);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s; /* Add transition for smooth color change and shaking effect */
+}
+
+.accountbox:hover, .adminbox:hover, .vendorbox:hover {
+    background: linear-gradient(45deg, #ea9a8b, #ff6b6b); /* Adjust gradient colors on hover */
+    transform: translateX(-5px); /* Move the element horizontally to the left on hover */
+}
+/* Add a keyframe animation for shaking effect */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(5px); /* Increase the initial and final translateX values */
+    }
+    50% {
+        transform: translateX(-5px); /* Move the element horizontally to the left at 50% of the animation */
+    }
+}
+
+.accountbox:hover, .adminbox:hover, .vendorbox:hover {
+    animation: shake 0.2s ease-in-out; /* Increase the animation duration for a more pronounced effect */
+}
+

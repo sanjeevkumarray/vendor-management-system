@@ -1,0 +1,91 @@
+.datagriddiv{
+
+  top:0;
+  
+}
+
+
+.custom-data-grid {
+  position:fixed;
+  width:100%;
+ 
+  height:100%;
+  background-color: rgb(6, 6, 6)
+}
+
+
+
+
+.custom-data-grid .MuiDataGrid-cell,.MuiDataGrid-sortIcon,.MuiDataGrid-menuIconButton{
+  color: white !important;
+  fontWeight: 700,
+}
+
+ .custom-data-grid .MuiDataGrid-checkboxInput {
+  color: white !important;
+  fontWeight: 700,
+}
+
+.custom-data-grid .MuiDataGrid-pagination {
+  color: white !important;
+}
+
+.custom-data-grid .MuiTablePagination-root {
+  color: white !important;
+}
+
+.custom-data-grid .MuiTablePagination-input,
+.custom-data-grid .MuiTablePagination-select {
+  color: white !important;
+}
+
+.custom-data-grid .MuiTablePagination-actions button {
+  color: white !important;
+}
+
+.custom-data-grid .MuiTablePagination-actions button:hover {
+  background-color: rgba(88, 154, 145, 0.674); /* Change the background color on hover */
+}
+
+
+
+.custom-data-grid  .MuiDataGrid-cell:hover{
+  background-color: rgba(34, 211, 224, 0.733); /* Change the background color on hover */
+}
+
+.custom-data-grid .MuiDataGrid-columnHeader,
+.custom-data-grid .MuiDataGrid-colCell,
+.custom-data-grid .MuiDataGrid-colCellTitle {
+  color: white !important;
+  font-weight: 700;
+}
+
+.custom-data-grid .MuiDataGrid-columnHeader:hover,
+.custom-data-grid .MuiDataGrid-colCell:hover,
+.custom-data-grid .MuiDataGrid-colCellTitle:hover {
+  color: rgb(170, 230, 192) !important;
+  font-weight: 700;
+}
+
+.custom-data-grid .Mui-checked .MuiDataGrid-checkboxInput {
+  color: white !important;
+}
+
+
+.vendercss{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: 10%;
+} 
+.custom-data-grid::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+}
+
+.custom-data-grid::-webkit-scrollbar-thumb {
+  background-color: rgba(34, 35, 35, 0.674); /* Change the color of the thumb (the draggable part) */
+}
+
+.custom-data-grid::-webkit-scrollbar-track {
+  background-color: rgba(18, 21, 26, 0.84); /* Change the color of the track (the non-draggable part) */
+}

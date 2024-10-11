@@ -1,0 +1,52 @@
+main{
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .pichart {
+    display: flex;
+    width: 20%;
+    height: 100px; /* Set a fixed height for the pie chart */
+    margin-top: 20px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #f8f8f8; /* Set a simple background color */
+    transition: transform 0.2s ease, background 3s linear; /* Add smooth transitions for shaking and color change */
+  }
+  
+  .pichart:hover {
+    transform: rotate(4turn); /* Rotate the pie chart 4 times on hover */
+    animation: changeColor 3s infinite, shake 0.5s 5; /* Change color automatically and shake 5 times */
+    cursor: pointer;
+  }
+  
+  @keyframes changeColor {
+    0%, 25%, 50%, 75%, 100% {
+      background: #f8f8f8; /* Set the default background color at different keyframes */
+    }
+    12.5%, 37.5%, 62.5%, 87.5% {
+      background: #d4d4d4; /* Set an alternate background color at different keyframes */
+    }
+  }
+  
+  @keyframes shake {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(5deg);
+    }
+    50% {
+      transform: rotate(-5deg);
+    }
+    75% {
+      transform: rotate(5deg);
+    }
+  }
+   
+
+.buttonupdate{
+  justify-items: center;
+  margin-left: 50%;
+padding: 3px;  
+}
+  
